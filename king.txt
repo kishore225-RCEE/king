@@ -1,0 +1,46 @@
+package pkg_sample;
+
+public class student {
+	
+	int rollno;
+	String name;
+	int no_subjects;
+	float avg_marks;
+	char gender;
+	boolean nationality;
+	long contact;
+	
+	public void initialize() {
+		
+		rollno = 19225;
+		name="king";
+		no_subjects= 7;
+		avg_marks=89.69f;
+		gender='M';
+		nationality=true;
+		contact=9030609891l;
+	}
+	
+	
+	public void display() {
+	
+		System.out.println("name of the student is: " +name);
+		System.out.println("rollno of the student is: " +rollno);
+	    System.out.println("no_subjects of the student is: " +no_subjects);
+	    System.out.println("avg_marks of the student is: " +avg_marks);
+	    System.out.println("gender of the student is: " +gender);
+	    System.out.println("nationality of the student is: " +nationality);
+	
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		student objstudent;
+		objstudent=new student(); // instr=ntiating the class
+		
+		objstudent.initialize();
+		objstudent.display();
+
+	}
+
+}
